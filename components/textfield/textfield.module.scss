@@ -1,0 +1,30 @@
+@import "../../_main.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+  @include respond(small) {
+    width: 160px;
+  }
+
+  ::placeholder {
+    color: #ccc;
+    padding-left: 10px;
+  }
+}
+
+.icon {
+  background: none;
+  margin-right: -24px;
+  z-index: 100;   
+}
